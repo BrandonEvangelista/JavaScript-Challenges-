@@ -57,5 +57,5 @@ function makeUpperCase(str) {
   // Code here
   return str.toUpperCase()
 }
-let a = "jdhsfuhwuhfnsdjkfhuihfkjshdfiuhwkjfbwuihfsdbflkjhdfkh"
+let a = "testingthefunction"
 console.log(makeUpperCase(a))
