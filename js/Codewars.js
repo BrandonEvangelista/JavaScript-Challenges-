@@ -48,3 +48,14 @@ gimme([5, 10, 14]) => 1
 function gimme(a) {
   return a.indexOf(a.concat().sort(function(a, b) { return a - b })[1])
 }
+
+
+
+//Write a function which converts the input string to uppercase.
+
+function makeUpperCase(str) {
+  // Code here
+  return str.toUpperCase()
+}
+let a = "jdhsfuhwuhfnsdjkfhuihfkjshdfiuhwkjfbwuihfsdbflkjhdfkh"
+console.log(makeUpperCase(a))
