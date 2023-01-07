@@ -86,3 +86,17 @@ let tank = 9000
 let fordMpg= .3
 
 console.log (zeroFuel(distToCheveron,fordMpg,tank))
+
+
+ /*    1/06/2023
+ JavaScript Arrays support a filter function (starting in JavaScript 1.6). Use the filter functionality to complete the function given. */
+ 
+ let randomnum = [1,2,3,4,5,6,5,4,5,6,7,8]
+
+ function getEvenNumbers(numbersArray){
+  return numbersArray.filter(function(num){return !(num % 2) })  // 0 is falsy
+
+}
+
+getEvenNumbers(randomnum)
+console.log(getEvenNumbers(randomnum))
