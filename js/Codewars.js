@@ -140,3 +140,29 @@ String will never be empty and you do not need to account for different data typ
 function findShort(s){
   return Math.min.apply(null, s.split(' ').map(w => w.length));
 }
+
+/* Return the number (count) of vowels in the given string.
+
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+The input string will only consist of lower case letters and/or spaces.
+
+*/
+
+function getCount(str) {
+  let count = 0
+  let spread = str.split('')
+  console.log(spread.length)
+  console.log(spread)
+  for(let i=0; i < spread.length;i++){
+    if (spread[i] == "a" || spread[i] == "e" ||spread[i] == "i" ||spread[i] == "o" ||spread[i] == "u" ){
+    count++
+    } else {console.log("booo   am not a vowel") }
+  
+  }
+    
+    
+    console.log (count)
+    return count
+    
+  }
