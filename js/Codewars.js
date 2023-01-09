@@ -183,3 +183,28 @@ function lovefunc(a, b){
     return true
   } else {return false}  
 }
+
+  /* Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
+
+Note: input will never be an empty string
+*/
+function fakeBin(x){
+  let spread = x.split('')
+  let newarr = []
+  let newnew= []
+  let p = newnew
+  for(let i = 0; i < spread.length ; i++) {
+    if (spread[i] < 5){ 
+      newnew.push("0")
+      console.log(newnew)
+    }else {
+    newnew.push("1")
+  }
+    console.log(newnew)
+    let p = newnew.join('')
+    console.log(p)
+   console.log(p)
+   
+  }
+   return newnew.join('')
+  }
