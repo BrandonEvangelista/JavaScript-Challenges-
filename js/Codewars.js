@@ -283,3 +283,28 @@ function makeUpperCase(str) {
   
   return str.toUpperCase()
 }
+
+/* Given a string, capitalize the letters that occupy even indexes and odd indexes separately, and return as shown below. Index 0 will be considered even.
+
+For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for more examples.
+
+The input will be a lowercase string with no spaces.
+
+Good luck! */
+function capitalize(s){
+  let set= s.split('')
+  let newset = []
+  let altset = []
+  for (let i = 0; i< set.length ;i++){
+    if (i%2 == 0) {
+      newset.push(set[i].toUpperCase())
+      altset.push(set[i].toLowerCase())
+    }
+    else { newset.push(set[i].toLowerCase()) 
+           altset.push(set[i].toUpperCase())
+         }
+       console.log(newset)
+  }
+  console.log(newset)
+  return [newset.join(''),altset.join('')]
+};
