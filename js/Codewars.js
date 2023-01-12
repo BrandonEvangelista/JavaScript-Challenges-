@@ -272,3 +272,14 @@ function squareSum(numbers){
 {
   return a + b > c && a + c > b && c + b > a;
 }
+
+
+
+  /*Write a function which converts the input string to uppercase. 
+*/
+
+function makeUpperCase(str) {
+  // Code here
+  
+  return str.toUpperCase()
+}
