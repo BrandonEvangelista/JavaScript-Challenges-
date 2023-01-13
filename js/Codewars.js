@@ -308,3 +308,8 @@ function capitalize(s){
   console.log(newset)
   return [newset.join(''),altset.join('')]
 };
+
+/* This code does not execute properly. Try to figure out why.  */
+function multiply(a, b){
+  return a * b
+}
