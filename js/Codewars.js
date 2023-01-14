@@ -313,3 +313,23 @@ function capitalize(s){
 function multiply(a, b){
   return a * b
 }
+
+
+/* Complete the function that accepts a string parameter, and reverses each word in the string. All spaces in the string should be retained.
+
+Examples
+"This is an example!" ==> "sihT si na !elpmaxe"
+"double  spaces"      ==> "elbuod  secaps"  */
+
+function reverseWords(str) {
+  // Go for it
+  let revphrase = str.split(' ')
+  let final = []
+  for(let i =0; i<revphrase.length; i++){
+   final.push( revphrase[i].split('').reverse().join(''));
+}
+  
+  
+  return final.join(" ")
+  
+}
