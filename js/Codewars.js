@@ -449,8 +449,22 @@ function DNAStrand(dna){
 
  //  Write a function which converts the input string to uppercase.
 
- function makeUpperCase(str) {
-  // Code here
+ function qmakeUpperCase(str) {
+  
   return str.toUpperCase()
-}
+ }
 
+ /* Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+
+Examples (input -> output)
+6, "I"     -> "IIIIII"
+5, "Hello" -> "HelloHelloHelloHelloHello" */
+function repeatStr (n, s){
+  
+  let car = []
+for (let i = 0 ; i< n ; i++)
+  {
+    car.push(s)
+  }
+  return car.join("")
+}
