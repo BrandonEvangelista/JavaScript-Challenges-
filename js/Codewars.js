@@ -513,3 +513,77 @@ function checkExam(array1, array2) {
    if (score >= 0 ){return score}
      
  }
+
+ /*The first input array is the key to the correct answers to an exam, like ["a", "a", "b", "d"]. The second one contains a student's submitted answers.
+
+The two arrays are not empty and are the same length. Return the score for this array of answers, giving +4 for each correct answer, -1 for each incorrect answer, and +0 for each blank answer, represented as an empty string (in C the space character is used).
+
+If the score < 0, return 0.
+
+For example:
+
+checkExam(["a", "a", "b", "b"], ["a", "c", "b", "d"]) → 6
+checkExam(["a", "a", "c", "b"], ["a", "a", "b",  ""]) → 7
+checkExam(["a", "a", "b", "c"], ["a", "a", "b", "c"]) → 16
+checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]) → 0 */
+
+function checkExam(array1, array2) {
+  // 4 points for each correct
+ // -1 point for each incorrect answer
+ //. 0 points for each blank ""
+   
+   let score = 0
+   for (let i = 0; i < array1.length ; i++){
+     
+     if (array2[i]==""){
+       console.log('blanky')
+       score += 0
+     }
+     
+     else if (array1[i] == array2[i]){
+       console.log ('4 points for Griffindor')
+       score += 4
+     }
+     
+     else if (array1[i] !== array2 [i]){
+       console.log('404 error')
+       score += -1
+     }
+
+     /* Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
+
+Examples
+    16  -->  1 + 6 = 7
+   942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
+132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6
+493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2  */
+function digitalRoot(n) {
+  let sum =0
+  let newsum =0
+ 
+   function attack(b) {
+     sum = 0
+     let arr1 = b.toString().split('')
+     arr1 = arr1.map(Number)
+    for(let i = 0; i < arr1.length;i++)
+      {
+        sum += arr1[i]
+      }
+    console.log (sum)
+ newsum = sum
+}
+  attack(n)
+  if (sum < 9){
+    return sum
+  }
+  else {
+    attack (newsum)  
+  }
+}
+
+/* JavaScript Arrays support a filter function (starting in JavaScript 1.6). Use the filter functionality to complete the function given.
+
+The solution would work like the following:
+
+getEvenNumbers([2,4,5,6]) // should == [2,4,6]
+*/
