@@ -591,3 +591,53 @@ getEvenNumbers([2,4,5,6]) // should == [2,4,6]
 function getEvenNumbers(numbersArray){
   return numbersArray.filter(function(num){return !(num % 2) })  // 0 is falsy
 }
+
+/* In this exercise, you will have to create a function named tiyFizzBuzz. This function will take on a string parameter and will return that string with some characters replaced, depending on the value:
+
+If a letter is a upper case consonants, replace that character with "Iron".
+If a letter is a lower case consonants or a non-alpha character, do nothing to that character
+If a letter is a upper case vowel, replace that character with "Iron Yard".
+If a letter is a lower case vowel, replace that character with "Yard".
+Ready?
+
+*/ 
+function tiyFizzBuzz(sentence){
+  
+  
+  const alphabet = ["B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z"];
+  const loweralphabet = alphabet.join('').toLowerCase().split('')
+  const vowel = ["A","E","I","O","U"]
+  const lowervowel = vowel.join('').toLowerCase().split('')
+  let empty = []
+  let arraySplit = sentence.split("");
+  for (let i = 0; i < arraySplit.length; i++)
+  {
+    console.log(arraySplit)
+    console.log (empty)
+    
+    if (alphabet.includes(arraySplit[i])) {
+        empty.push("Iron")
+        }
+    
+    
+    else if (vowel.includes(arraySplit[i]))
+            {
+             empty.push("Iron Yard")
+             }
+    
+     else if  (lowervowel.includes(arraySplit[i])) 
+              {empty.push("Yard")}
+   
+ 
+      
+       else {
+      console.log("did nothing")
+      empty.push(arraySplit[i])
+    }
+    
+  
+  
+}
+   console.log (empty)
+  return empty.join('')
+}
