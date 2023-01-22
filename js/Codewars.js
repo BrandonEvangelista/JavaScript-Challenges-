@@ -703,3 +703,12 @@ function getCount(str) {
    }
    return vcount
  }
+// practice fibonacci's sequence
+function fibo(n){
+  let arry = [0,1]
+  for (let i = 2 ; i < n ; i++)
+  {
+      arry[i]= arry[i-1]+arry[i-2]
+  }
+  console.log(arry)
+}
