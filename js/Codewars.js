@@ -712,3 +712,13 @@ function fibo(n){
   }
   console.log(arry)
 }
+// practice factorial dectrement 
+function factorial (n)
+{
+    let car = 1
+    for (let i = n ; i > 0 ; i--)
+    {
+        car *=i
+    }
+    console.log(car)
+}
