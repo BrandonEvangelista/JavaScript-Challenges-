@@ -722,3 +722,59 @@ function factorial (n)
     }
     console.log(car)
 }
+
+// super clean
+function tiyFizzBuzz(sentence){
+  
+  /* BRUTE FORCE METHOD!
+  Given a string, we need to change each character(there are 4 different scenarios) and return the new string
+  
+  We need to satisfy 4 different conditions. 
+    1.) If a letter is a upper case consonants, replace that character with "Iron".
+    2.)If a letter is a lower case consonants or a non-alpha character, do nothing to that character
+    3.)If a letter is a upper case vowel, replace that character with "Iron Yard".
+    4.)If a letter is a lower case vowel, replace that character with "Yard".
+    
+  */
+   
+  // First we need to create  different arrays to compare to (one for each condition/except for the last one since it is an "else")
+  const alphabet = ["B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z"];
+  const vowel = ["A","E","I","O","U"]
+  
+ //Rather than hard code new arrays with all lowercase letters, we can use these methods so that we do not have to type it over and over again
+  const loweralphabet = alphabet.join('').toLowerCase().split('')
+  const lowervowel = vowel.join('').toLowerCase().split('')
+ 
+  // as we iterate through the array, we can use .push() to add values such as "iron"/"iron yard"/'yard'
+  let empty = []
+  
+  // .split() allows us to create an array from the input so that we can iterate through it using a for loop 
+  let arraySplit = sentence.split("");
+    
+  // all our variables are ready to go, now we can start the loop and conditionals.
+  for (let i = 0; i < arraySplit.length; i++) {
+    
+       console.log(arraySplit)
+       console.log (empty)
+    //  If a letter is a upper case consonants, replace that character with "Iron".
+      if(alphabet.includes(arraySplit[i])) {
+        empty.push("Iron");
+        }
+    
+    // If a letter is a upper case vowel, replace that character with "Iron Yard". 
+      else if(vowel.includes(arraySplit[i])){
+        empty.push("Iron Yard");
+        }
+    //  If a letter is a lower case vowel, replace that character with "Yard".
+      else if  (lowervowel.includes(arraySplit[i])){
+        empty.push("Yard");
+        }
+    //If a letter is a lower case consonants or a non-alpha character, do nothing to that character
+      else {
+      console.log("did nothing")
+      empty.push(arraySplit[i])
+        }
+    }
+   console.log (empty)
+  return empty.join('')
+}
