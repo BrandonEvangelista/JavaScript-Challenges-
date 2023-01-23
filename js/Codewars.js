@@ -778,3 +778,5 @@ function tiyFizzBuzz(sentence){
    console.log (empty)
   return empty.join('')
 }
+
+// continue to practive everything. Do not take a a day off
