@@ -780,3 +780,34 @@ function tiyFizzBuzz(sentence){
 }
 
 // continue to practive everything. Do not take a a day off
+
+
+function highlight(code) {
+  // Implement your syntax highlighter here
+  let numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+  
+  let spread = code.split('')
+  for (let i = 0; i<spread.length;i++ )
+     {
+        if (spread[i]=="F")
+          {
+            spread[i]= ('<span style="color: pink">F</span>')
+          }
+        else if (spread[i]=="L")
+          {
+            spread[i]= ('<span style="color: red">L</span>')
+          }
+        else if (numbers.includes(spread[i])
+          {
+            spread[i]= ('<span style="color: green">spread[i]</span>')
+          }
+        else if (spread[i]=="R")
+          {
+            spread[i]= ('<span style="color: green">R</span>')
+          }
+        else {
+                console.log ('nothing') 
+             }
+  }
+      
+
