@@ -445,7 +445,7 @@ function DNAStrand(dna){
     }
     console.log (newword)
     return newword.join('')
-  }
+  }}
 
  //  Write a function which converts the input string to uppercase.
 
@@ -549,7 +549,7 @@ function checkExam(array1, array2) {
        console.log('404 error')
        score += -1
      }
-
+   }}
      /* Given n, take the sum of the digits of n. If that value has more than one digit, continue reducing in this way until a single-digit number is produced. The input will be a non-negative integer.
 
 Examples
@@ -797,7 +797,7 @@ function highlight(code) {
           {
             spread[i]= ('<span style="color: red">L</span>')
           }
-        else if (numbers.includes(spread[i])
+        else if (numbers.includes(spread[i]))
           {
             spread[i]= ('<span style="color: green">spread[i]</span>')
           }
@@ -822,4 +822,7 @@ Happy Coding! */
 function squareDigits(num){
   return Number(('' + num).split('').map(function (val) { return val * val;}).join(''));
   
+};
+
 }
+
