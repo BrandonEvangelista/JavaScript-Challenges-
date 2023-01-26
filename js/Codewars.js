@@ -924,3 +924,4 @@ function Stock (name, code, quantity, price) {
              new ("Caramac Bar", "A02", 5, 0.60)
              new ("Dairy Milk","A03", 1, 0.65)
              new ("Freddo","A04", 1, 0.25)
+asdfasfasdf
