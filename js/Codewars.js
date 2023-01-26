@@ -824,5 +824,103 @@ function squareDigits(num){
   
 };
 
+
+}
+console.log('')
+
+
+
+
+/* 
+Introduction
+A vending machine is a machine that dispenses items such as snacks and beverages to customers automatically, after the customer inserts currency or credit into the machine. The first modern vending machines were developed in England in the early 19th century and dispensed postcards. (Source Wikipedia)
+Vending Machine
+Task
+In this simple Kata aimed at beginners your task is to recreate a vending machine. You will have to make a class called VendingMachine with at least one method called vend. On creation of a new instance of VendingMachine the items Array and Initial vending machine money is passed. The vend method should take two arguments 
+
+1. Selection code of the item (not case sensitive) and 
+
+2. Amount of money the user inserts into the machine.
+
+
+1. If the money given to the machine is less than the item cost return "Not enough money!"
+
+2. If the quantity is 0 for an item return "Item Name: Out of stock!". Where "Item Name" is the name of the item selected.
+
+3. If an item is correctly selected return "Vending Item Name with 9.40 change.". Where "Item Name" is the name of the item and change if any given.
+
+4. If an item is correctly selected and there is no change needed then return "Vending Item Name". Where "Item Name" is the name of the item.
+
+5. If an invalid item is selected return "Invalid selection! : Money in vending machine = 11.20". Where 11.20 is the machines money float.
+
+6. If a selection is successful then the quantity should be updated.
+
+7. The vending machine never runs out of money for simplicity however you will need to keep track of the amount of money in the machine at anytime (this is not tested in any of the test cases)
+
+8. Change is always given to 2 decimal places ie 7.00
+
+
+*/
+
+
+let changeBack = 0
+
+
+function VendingMachine(items, money) {
+  // Code Here
+   changeBack = (money - items.price).toFixed(2)
+
+// first check if enough money was put in
+if (money < items.price) {
+  return "Not enough money!"
+}
+// if stock == 0 for item
+else if (items.quantity == 0){
+    return (`${items.name} : "Out of stock!"`)
+}
+else if (!items.includes(item)){
+  return `Invalid selection! : Money in vending machine = ${changeBack}`
+}
+// if stock is avail, and change is dispensed
+else if(money > items.price) {
+    items.quanitiy -= 1
+    console.log(`${items.name} is being dispnesed, now only ${items.quanity} are left` )
+    return (`Vending ${item.name} with ${changeBack} `)
+  }
+// exact change scenario  
+else if (money == items.price)
+  {
+    items.quanitiy -= 1
+    return (`Vending ${items.name}`)
+  }
+
+
+};
+
+
+const  items = [{name:"Smarties", code:"A01", quantity:10, price:0.60},
+             {name:"Caramac Bar", code:"A02", quantity:5, price:0.60},
+             {name:"Dairy Milk", code:"A03", quantity:1, price:0.65},
+             {name:"Freddo", code:"A04", quantity:1, price:0.25}];
+
+
+
+
+VendingMachine.prototype.vend = function (selection, itemMoney){
+  // Code Here
+};
+function Stock (name, code, quantity, price) {
+  this.name
+  this.code
+  this.quanity
+  this.price
+  this.vend
 }
 
+
+
+=
+             new Stock( "Smarties", "A01", 10, 0.60)
+             new ("Caramac Bar", "A02", 5, 0.60)
+             new ("Dairy Milk","A03", 1, 0.65)
+             new ("Freddo","A04", 1, 0.25)
