@@ -872,6 +872,7 @@ function VendingMachine(items, money) {
 
 // first check if enough money was put in
 if (money < items.price) {
+  console.log (items.price)
   return "Not enough money!"
 }
 // if stock == 0 for item
@@ -919,12 +920,11 @@ function Stock (name, code, quantity, price) {
 
 
 
-=
-             new Stock( "Smarties", "A01", 10, 0.60)
-             new ("Caramac Bar", "A02", 5, 0.60)
-             new ("Dairy Milk","A03", 1, 0.65)
-             new ("Freddo","A04", 1, 0.25)
-asdfasfasdf   var    fred   =   new Stock("Freddo","A04", 1, 0.25)
+
+   var smart   =      new Stock( "Smarties", "A01", 10, 0.60)
+   var carm    =     new Stock("Caramac Bar", "A02", 5, 0.60)
+   var  dair  =    new Stock("Dairy Milk","A03", 1, 0.65)
+   var    fred   =   new Stock("Freddo","A04", 1, 0.25)
 asdfasfasdf
 
 /*
