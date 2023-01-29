@@ -941,3 +941,31 @@ function reverse(str){
   console.log (cat)
   return cat.join(' ').trim()
 }
+
+function createSequentialArr(howBig) 
+  {
+    let cat = []
+    for (let i= 0; i <= howBig ; i++)
+      {
+        cat.push(i)
+      } 
+    return cat
+  }
+
+function linearSearch (list,target)
+  {
+    //returns the index position of the target! if found return the target, else returns none
+    for( let i = 0; i < list.length ; i++)
+      {
+        if (list[i] === target) 
+          {
+            console.log("found it")
+          }
+        else 
+          {
+            console.log ("does not match ")
+          }
+      }
+
+  }
+//pojpoijpoijpiojpiojpoijpiojioj
