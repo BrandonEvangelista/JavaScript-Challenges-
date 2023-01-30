@@ -329,15 +329,6 @@ function reverseWords(str) {
    final.push( revphrase[i].split('').reverse().join(''));
 }
   
-
-/* longest substring */
-
-
-const solution = (s) => {
-  if (s.length === 0) return 0
-      
-      
-   let set = new Set() 
   
   return final.join(" ")
   
