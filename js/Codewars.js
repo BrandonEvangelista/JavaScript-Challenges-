@@ -361,6 +361,7 @@ const solution = (s) => {
   
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*DESCRIPTION:
 Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
 
@@ -378,6 +379,8 @@ function XO(str) {
   return (x && x.length) === (o && o.length);
 }
 =======
+=======
+>>>>>>> 897627a8c8eae0366dc8268538e52083269507ad
 /* We need a function that can transform a number (integer) into a string.
 
 What ways of achieving this do you know?
@@ -986,5 +989,9 @@ function linearSearch (list,target)
       }
 
   }
+<<<<<<< HEAD
+//pojpoijpoijpiojpiojpoijpiojioj
+>>>>>>> 897627a8c8eae0366dc8268538e52083269507ad
+=======
 //pojpoijpoijpiojpiojpoijpiojioj
 >>>>>>> 897627a8c8eae0366dc8268538e52083269507ad
