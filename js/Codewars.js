@@ -336,6 +336,9 @@ function reverseWords(str) {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 1d37945 (Update Codewars.js)
 /*DESCRIPTION:
 Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
 
@@ -963,10 +966,6 @@ function linearSearch (list,target)
       }
 
   }
-<<<<<<< HEAD
-//pojpoijpoijpiojpiojpoijpiojioj
->>>>>>> 897627a8c8eae0366dc8268538e52083269507ad
-=======
 //pojpoijpoijpiojpiojpoijpiojioj
 >>>>>>> 897627a8c8eae0366dc8268538e52083269507ad
 =======
