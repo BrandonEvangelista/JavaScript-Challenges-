@@ -356,8 +356,6 @@ function XO(str) {
   return (x && x.length) === (o && o.length);
 }
 =======
-=======
->>>>>>> 897627a8c8eae0366dc8268538e52083269507ad
 /* We need a function that can transform a number (integer) into a string.
 
 What ways of achieving this do you know?
