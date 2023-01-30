@@ -338,28 +338,11 @@ const solution = (s) => {
       
       
    let set = new Set() 
-   let i =0 
-   let j = 0 
-   let maxLength = 0
-   
-   while (j < s.length){
-   if (!set.has (s[j]))  {
-       set.add(s[j])
-       j++
-  } else {
-   set.delete(s[i])
-  i++
-  }
-       maxLength = Math.max(maxLength,set.size);
-   }
-     return maxLength
-  
-  
-  };
   
   return final.join(" ")
   
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 /*DESCRIPTION:
@@ -995,3 +978,5 @@ function linearSearch (list,target)
 =======
 //pojpoijpoijpiojpiojpoijpiojioj
 >>>>>>> 897627a8c8eae0366dc8268538e52083269507ad
+=======
+>>>>>>> parent of 5a9d38e (Update Codewars.js)
