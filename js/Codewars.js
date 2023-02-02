@@ -329,37 +329,33 @@ function reverseWords(str) {
    final.push( revphrase[i].split('').reverse().join(''));
 }
   
-
-/* longest substring */
-
-
-const solution = (s) => {
-  if (s.length === 0) return 0
-      
-      
-   let set = new Set() 
-   let i =0 
-   let j = 0 
-   let maxLength = 0
-   
-   while (j < s.length){
-   if (!set.has (s[j]))  {
-       set.add(s[j])
-       j++
-  } else {
-   set.delete(s[i])
-  i++
-  }
-       maxLength = Math.max(maxLength,set.size);
-   }
-     return maxLength
-  
-  
-  };
   
   return final.join(" ")
   
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 1d37945 (Update Codewars.js)
+/*DESCRIPTION:
+Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+
+Examples input/output:
+
+XO("ooxx") => true
+XO("xooxx") => false
+XO("ooxXm") => true
+XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+XO("zzoo") => false  */
+
+function XO(str) {
+  let x = str.match(/x/gi);
+  let o = str.match(/o/gi);
+  return (x && x.length) === (o && o.length);
+}
+=======
 /* We need a function that can transform a number (integer) into a string.
 
 What ways of achieving this do you know?
@@ -968,4 +964,11 @@ function linearSearch (list,target)
       }
 
   }
+<<<<<<< HEAD
 //pojpoijpoijpiojpiojpoijpiojiojxczxc
+=======
+//pojpoijpoijpiojpiojpoijpiojioj
+>>>>>>> 897627a8c8eae0366dc8268538e52083269507ad
+=======
+>>>>>>> parent of 5a9d38e (Update Codewars.js)
+>>>>>>> f117a67cbe33e2c815f4022817da77eab957894f
