@@ -329,53 +329,7 @@ function reverseWords(str) {
    final.push( revphrase[i].split('').reverse().join(''));
 }
   
-  
-  return final.join(" ")
-  
-}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of 1d37945 (Update Codewars.js)
-/*DESCRIPTION:
-Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
 
-Examples input/output:
-
-XO("ooxx") => true
-XO("xooxx") => false
-XO("ooxXm") => true
-XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
-XO("zzoo") => false  */
-
-function XO(str) {
-  let x = str.match(/x/gi);
-  let o = str.match(/o/gi);
-  return (x && x.length) === (o && o.length);
-}
-=======
-/* We need a function that can transform a number (integer) into a string.
-
-What ways of achieving this do you know?
-
-Examples (input --> output):
-123  --> "123"
-999  --> "999"
--100 --> "-100" */
-
-function numberToString(num) {
-  // Return a string of the number here!
-  
-  return String(num)
-  
-}
-// Return the number (count) of vowels in the given string.
-
-//We will consider a, e, i, o, u as vowels for this Kata (but not y).
-
-//The input string will only consist of lower case letters and/or spaces.
 
 
 
@@ -408,7 +362,7 @@ If you want to know more: http://en.wikipedia.org/wiki/DNA
 
 In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". Your function receives one side of the DNA (string, except for Haskell); you need to return the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
 
-More similar exercise are found here: http://rosalind.info/problems/list-view/ (source)
+More similar exercise are found here: http://rosalind.info/problems/list-view/ (source) asf
 
 Example: (input --> output)
 
@@ -948,7 +902,37 @@ function createSequentialArr(howBig)
     return cat
   }
 
-function linearSearch (list,target)
+  function linearSearch (list,target)
+  {
+    //returns the index position of the target! if found return the target, else returns none
+    for( let i = 0; i < list.length ; i++)
+      {
+        if (list[i] === target) 
+          {
+            console.log("found it")
+          }
+        else 
+          {
+            console.log ("does not match ")
+          }
+      }
+
+  }function linearSearch (list,target)
+  {
+    //returns the index position of the target! if found return the target, else returns none
+    for( let i = 0; i < list.length ; i++)
+      {
+        if (list[i] === target) 
+          {
+            console.log("found it")
+          }
+        else 
+          {
+            console.log ("does not match ")
+          }
+      }
+
+  }function linearSearch (list,target)
   {
     //returns the index position of the target! if found return the target, else returns none
     for( let i = 0; i < list.length ; i++)
@@ -964,11 +948,21 @@ function linearSearch (list,target)
       }
 
   }
-<<<<<<< HEAD
-//pojpoijpoijpiojpiojpoijpiojiojxczxc
-=======
-//pojpoijpoijpiojpiojpoijpiojioj
->>>>>>> 897627a8c8eae0366dc8268538e52083269507ad
-=======
->>>>>>> parent of 5a9d38e (Update Codewars.js)
->>>>>>> f117a67cbe33e2c815f4022817da77eab957894f
+/*
+ kyu 6
+ Duplicate Encoder
+ The goal of this exercise is to convert a string to a new string where each character in the new string is "(" if that character appears only once in the original string, or ")" if that character appears more than once in the original string. Ignore capitalization when determining if a character is a duplicate.
+ 
+*/
+
+function duplicateEncode(word){
+  // ...
+  const alphabet = ["B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z"];
+  let emptyCheck= []
+let spread = word.toUpperCase().spilt("")
+for (let i = 0; i < spread.length ; i++)
+  {
+    emptyCheck.push(spread[i]);
+    console.log(emptyCheck);
+  }
+}
