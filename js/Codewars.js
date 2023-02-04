@@ -983,4 +983,4 @@ function duplicateCount(text){
   
   return result;
   
-}
+}//sadfg
