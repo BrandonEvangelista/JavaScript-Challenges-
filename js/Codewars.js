@@ -955,14 +955,32 @@ function createSequentialArr(howBig)
  
 */
 
-function duplicateEncode(word){
-  // ...
-  const alphabet = ["B","C","D","F","G","H","J","K","L","M","N","P","Q","R","S","T","V","W","X","Y","Z"];
-  let emptyCheck= []
-let spread = word.toUpperCase().spilt("")
-for (let i = 0; i < spread.length ; i++)
-  {
-    emptyCheck.push(spread[i]);
-    console.log(emptyCheck);
+function duplicateCount(text){
+  
+  var input = text.toLowerCase().split('');
+  
+  var obj = {};
+  
+  for( var i in input) {
+  	
+  	if(!obj[ input[i] ]){
+  		
+  		obj[ input[i] ] = 1;
+  		
+  	} else{
+  		obj[ input[i] ] += 1;
+  	}	
   }
+  
+  var result = 0;
+  
+  for( var prop in obj) {
+  	
+    if(obj[prop] > 1){
+  	 result++;
+    }
+  }
+  
+  return result;
+  
 }
