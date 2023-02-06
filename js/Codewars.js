@@ -999,3 +999,43 @@ function evenOrOdd(number) {
      return ("Odd")
    }
  }
+
+ /*
+ Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+For example,
+
+[true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true]
+  */
+  function countSheeps(arrayOfSheep) {
+    // TODO May the force be with you
+    let count = 0
+    for (let i = 0; i < arrayOfSheep.length ; i++){
+      if (arrayOfSheep[i]== true){
+        count++
+      }
+      else{
+        console.log('no sheep here')
+      }
+    }
+    return count
+  }
+
+
+  /*
+Jenny has written a function that returns a greeting for a user. However, she's in love with Johnny, and would like to greet him slightly different. She added a special case to her function, but she made a mistake.
+
+Can you help her?
+  */
+function greet(name){
+  
+  if(name === "Johnny")
+    return ("Hello, my love!");
+  
+  else{return "Hello, " + name + "!";}
+}
