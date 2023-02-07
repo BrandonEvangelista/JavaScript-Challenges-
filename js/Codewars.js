@@ -1096,3 +1096,44 @@ function getAverage(marks){
   let avg = Math.floor(sum/marks.length);
   return avg
 }
+
+/*
+Rock Paper Scissors
+Let's play! You have to return which player won! In case of a draw return Draw!.
+
+Examples(Input1, Input2 --> Output):
+
+"scissors", "paper" --> "Player 1 won!"
+"scissors", "rock" --> "Player 2 won!"
+"paper", "paper" --> "Draw!"
+*/
+
+const rps = (p1, p2) => {
+  let winner1 = "Player 1 won!"
+  let winner2 = "Player 2 won!"
+  let noWinner = "Draw!"
+  let s = "scissors"
+  let p = "paper" 
+  let r = "rock"
+  if (p1 === p2){
+    return noWinner
+  }
+  else if (p1 == s && p2 == r) {
+    return winner2
+  }
+   else if (p1 == r && p2 == p) {
+    return winner2
+  }
+  else if (p1 == p && p2 == s) {
+    return winner2
+  }
+  else if (p1 == r && p2 == s) {
+    return winner1
+  }
+   else if (p1 == p && p2 == r) {
+    return winner1
+  }
+  else if (p1 == s && p2 == p) {
+    return winner1
+  }
+};
