@@ -1147,4 +1147,32 @@ const rps2 = (p1, p2) => {
     return ("Player 1 won!");
   }
     else {return ("Player 2 won!");}
+  }}
+/*
+Write a function that when given a number >= 0, returns an Array of ascending length subarrays.
+
+pyramid(0) => [ ]
+pyramid(1) => [ [1] ]
+pyramid(2) => [ [1], [1, 1] ]
+pyramid(3) => [ [1], [1, 1], [1, 1, 1] ]
+Note: the subarrays should be filled with 1s
+*/
+
+// given 0 . 0 arrays will be formed /
+
+// given 3 . 3 arrays will be formed. first will have 1 sec will have 1,1
+
+function pyramid(n) {
+  // your code here
+  let final = []
+  if (n==0){
+    return final 
   }
+  for (let i = 0; i<n ; i++){
+    final.push([])
+      for (let i = 0; i<n ; i++){
+          final[i-1].push(1)
+    }
+  }
+return final
+}
