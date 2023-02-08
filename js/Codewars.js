@@ -1176,3 +1176,45 @@ function pyramid(n) {
   }
 return final
 }
+function chessBoard(rows, columns) {
+  // your code goes here
+    let board = []
+    let x = "X"
+    let o= "O"
+    let counter = 0
+    let rowNumber= 0
+   // x coor, y coor
+  //            first create the rows--!>
+    for (let i = 0 ;i < rows;i++)
+      {
+      board.push([])
+      }
+     console.log(board)
+   // 
+    for (let i = 0; i < rows; i++)
+      {
+        for (let i = 0; i < columns ; i++)
+         {
+             if( counter%2==0)
+              {
+                board[rowNumber].push(x)
+               counter+=1
+               
+              }
+             else if (counter%2==1)
+              {
+                board[rowNumber].push(o)
+                counter+=1
+              }
+           console.log(board[rowNumber])
+          }
+      
+       rowNumber+=1
+ 
+       }
+      
+      
+      
+      return board
+  }
+  //asdfghjk
