@@ -1229,4 +1229,15 @@ function chessBoard(rows, columns) {
      return spread.join('')
    
    };
+   function removeChar1(str){
+    //You got this!
+     let spread = str.split('')
+     let empty = []
+    for (let i = 1; i < spread.length-1 ;i++){
+      empty.push(spread[i])
+      console.log(empty)
+    }
+   return empty.join('')
+   };
+
    
