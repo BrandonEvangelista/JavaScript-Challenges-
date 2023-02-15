@@ -1270,7 +1270,7 @@ function solution(number){
   }
     return sum
 }
-//Simple, remove the spaces from the string, then return the resultant string.
+//Simple, remove the spaces from the string, then return the resultant string. hoiuh
 function noSpace(x){
   return x.replace(/\s+/g,'')
     
