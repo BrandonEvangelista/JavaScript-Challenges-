@@ -1290,3 +1290,29 @@ function noSpace(x){
     
   }
 
+  var humanYearsCatYearsDogYears = function(humanYears) {
+    // Your code here!
+    
+    let cat1 = 15
+    let cat2 = 9
+    let catseq = 4
+    let cat3= 15 +9
+    let catf = Math.abs((humanYears-2)*catseq)+cat1+cat2
+    
+    
+    let dog1 = 15
+    let dog2 = 9
+    let dog3 = 5
+    let dog4 =  26
+    let dogf = Math.abs((humanYears-2)*dog3)+dog1+dog2
+    
+    
+    if (humanYears==1){
+      return[humanYears,cat1,dog1]
+    }
+    else if(humanYears==2){
+      return[humanYears,cat3,dog4]
+    }
+    else{
+    return [humanYears,catf,dogf];}
+  }
