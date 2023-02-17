@@ -1316,3 +1316,13 @@ function noSpace(x){
     else{
     return [humanYears,catf,dogf];}
   }
+  function squareSum(numbers){
+
+  let sum = 0
+  
+  for (let i = 0; i < numbers.length; i++) {
+    sum += (numbers[i] ** 2)
+    console.log (sum)
+  }
+  return sum
+}
