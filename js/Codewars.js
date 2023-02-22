@@ -1348,3 +1348,27 @@ function findOdd(arr) {
 function digitize(n) {
   return String(n).split('').map(Number).reverse()
 }
+
+function printerError(s) {
+  // your code
+//turn string into array
+//iterate and see if value is not a-m
+//array length == denom   and  error is 
+
+let errorStr = "nopqrstuvwxyz"
+let errorArr = errorStr.split("")
+let masterArr = s.split("")
+console.log(masterArr)
+let denom = masterArr.length
+let num = 0
+
+for (let i = 0; i < denom ; i++){
+  if (errorArr.includes(masterArr[i])){ 
+   console.log("FUCK bad color")
+    num++
+  }
+ 
+  
+}
+return (`${num}/${denom}`)
+}
