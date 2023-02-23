@@ -1372,3 +1372,20 @@ for (let i = 0; i < denom ; i++){
 }
 return (`${num}/${denom}`)
 }
+
+function findAverage(array) {
+  // your code here
+  let sum = 0
+  let demoni = array.length
+  
+  if (array.length ==0) {
+    return 0
+  }
+  
+  for (let i = 0;i < array.length; i++){
+    sum = sum + array[i]
+  }
+  
+  let avg = sum/demoni
+  return avg;
+}
