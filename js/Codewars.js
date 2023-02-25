@@ -1395,3 +1395,5 @@ function findAverage(array) {
 function check(a, x) {
   return (a.includes(x))
   }
+
+  // practice makes perfect 
