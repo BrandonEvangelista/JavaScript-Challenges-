@@ -1396,4 +1396,20 @@ function check(a, x) {
   return (a.includes(x))
   }
 
-  // practice makes perfect 
+
+
+  function narcissistic(value) {
+    let stringy = String(value);
+    let arry = stringy.split("")
+    let base = arry.length
+    let sum = 0
+    for (let i = 0; i < base; i++){
+      sum += Number(Math.pow(arry[i],base))
+      console.log(sum)
+    }
+    if (sum == value ){
+      return true
+    }
+    else {return false }
+  }
+
