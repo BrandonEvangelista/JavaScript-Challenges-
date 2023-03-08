@@ -1422,3 +1422,19 @@ Write a function that takes an array of words and smashes them together into a s
 function smash (words) {
   return words.join(" ").trim()
 };
+
+
+
+function getCount123(str) {
+  var vowelsCount = 0;
+  var vowels = ["a","e","i","o","u"];
+  for(var i = 0;i < str.length;i++){
+    for(var j=0;j<vowels.length;j++){
+      if(str[i] === vowels[j]){
+        vowelsCount++;
+      }
+    }
+  }
+  
+  return vowelsCount;
+}
