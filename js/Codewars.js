@@ -1460,3 +1460,15 @@ If it is the case we will return k, if not return -1.
 Note: n and p will always be given as strictly positive integers.
 */
 
+function digPow(n, p){
+  // convert the number into string
+  let str = String(n);
+  let add = 0;
+  // convert string into array using split()
+  str.split('').forEach(num=>{
+    add += Math.pow(Number(num) , p);
+    p++;
+  });
+
+  return (add % n) ? -1 : add/n;
+}
