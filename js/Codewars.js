@@ -1,4 +1,4 @@
-console.log("these nuts")
+
 
 /*
 /1/2/2023
@@ -1498,6 +1498,7 @@ function orderWeight(strng) {
     };
   return strng.split(' ').sort(comp).join(' ');
  }
+<<<<<<< HEAD
 
  /*
 Create a function that accepts a string and a single character, and returns an integer of the count of occurrences the 2nd argument is found in the first one.
@@ -1532,3 +1533,5 @@ for(let i = 0; i < lensss; i++){
 }
 return count
 }
+=======
+>>>>>>> 22d52dc7596e1948151e147d07ee9404f4a8fa63
